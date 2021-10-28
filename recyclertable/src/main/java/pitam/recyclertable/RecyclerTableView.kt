@@ -79,6 +79,27 @@ open class RecyclerTableView(context: Context, attrs: AttributeSet?) :
                 val currentItem = items[position]
                 val isHeader = position == 0
                 with(binding) {
+                    textView0.visibility = View.GONE
+                    textView1.visibility = View.GONE
+                    textView2.visibility = View.GONE
+                    textView3.visibility = View.GONE
+                    textView4.visibility = View.GONE
+                    textView5.visibility = View.GONE
+                    textView6.visibility = View.GONE
+                    textView7.visibility = View.GONE
+                    textView8.visibility = View.GONE
+                    textView9.visibility = View.GONE
+                    textView10.visibility = View.GONE
+                    textView11.visibility = View.GONE
+                    textView12.visibility = View.GONE
+                    textView13.visibility = View.GONE
+                    textView14.visibility = View.GONE
+                    textView15.visibility = View.GONE
+                    textView16.visibility = View.GONE
+                    textView17.visibility = View.GONE
+                    textView18.visibility = View.GONE
+
+
                     if (isHeader) {
                         root.setBackgroundColor(Color.parseColor("#9CE1FF"))
                     }
@@ -100,7 +121,9 @@ open class RecyclerTableView(context: Context, attrs: AttributeSet?) :
                             13 -> textView13.setWidthAndText(it, isHeader)
                             14 -> textView14.setWidthAndText(it, isHeader)
                             15 -> textView15.setWidthAndText(it, isHeader)
-
+                            16 -> textView16.setWidthAndText(it, isHeader)
+                            17 -> textView17.setWidthAndText(it, isHeader)
+                            18 -> textView18.setWidthAndText(it, isHeader)
                         }
                     }
 

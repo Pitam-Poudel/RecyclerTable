@@ -9,10 +9,9 @@ import pitam.recyclertable.databinding.LayoutRecyclerTableBinding
 
 class RecyclerTableView(context: Context, attrs: AttributeSet?) :
     LinearLayout(context, attrs) {
-    private val rvAdapter: RecyclerTableAdapter by lazy {
+    val rvAdapter: RecyclerTableAdapter by lazy {
         RecyclerTableAdapter()
     }
-
     init {
         val binding: LayoutRecyclerTableBinding = DataBindingUtil.inflate(
             context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater,
@@ -22,12 +21,5 @@ class RecyclerTableView(context: Context, attrs: AttributeSet?) :
         )
         binding.recyclerView.adapter = rvAdapter
     }
-
-    fun setData(data: List<List<String>>) {
-        rvAdapter.items.clear()
-        rvAdapter.items.addAll(data)
-        rvAdapter.notifyDataSetChanged()
-    }
-
 
 }
